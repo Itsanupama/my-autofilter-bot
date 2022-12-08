@@ -106,11 +106,7 @@ async def next_page(bot, query):
             for file in files
         ]
 
-    btn.insert(0,
-        [
-            InlineKeyboardButton(text="📥 HOW TO DOWNLOAD 📥", url='https://t.me/How_To_Open_shortLinks/16')
-        ]
-    )
+   
 
     if 0 < offset <= 10:
         off_set = 0
@@ -124,6 +120,11 @@ async def next_page(bot, query):
              InlineKeyboardButton(f"📃 𝗣𝗮𝗴𝗲s {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}",
                                   callback_data="pages")]
         )
+         btn.insert(0,
+        [
+            InlineKeyboardButton(text="📥 HOW TO DOWNLOAD 📥", url='https://t.me/How_To_Open_shortLinks/16')
+        ]
+    )
     elif off_set is None:
         btn.append(
             [InlineKeyboardButton(f"🗓 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
@@ -136,6 +137,11 @@ async def next_page(bot, query):
                 InlineKeyboardButton("𝗡𝗲𝘅𝘁 ➡️", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
+         btn.insert(0,
+        [
+            InlineKeyboardButton(text="📥 HOW TO DOWNLOAD 📥", url='https://t.me/How_To_Open_shortLinks/16')
+        ]
+    )
     try:
         await query.edit_message_reply_markup(
             reply_markup=InlineKeyboardMarkup(btn)
