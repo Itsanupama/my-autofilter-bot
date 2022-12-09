@@ -660,7 +660,7 @@ async def auto_filter(client, msg, spoll=False):
 
     btn.insert(0,
         [
-            InlineKeyboardButton(text="report To Admin", url='https://t.me/Anonymous_owner_bot')
+            InlineKeyboardButton(text="📥 HOW TO DOWNLOAD 📥", url='https://t.me/How_To_Open_shortLinks/16')
         ]
     )
 
