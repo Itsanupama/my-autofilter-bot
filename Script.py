@@ -13,7 +13,8 @@ def is_enabled(value, default):
 class script(object):
     HOME_BUTTONURL_UPDATES = environ.get("HOME_BUTTONURL_UPDATES", 'https://shorturllink.in/ref/Killer')
     START_TXT = environ.get("START_TXT", '''<b>Hello {} 👋🏻 Im Search Bot I can share Movies and Series 😁.
-    Just send movie name </b>
+    
+   Just send movie name </b>
 
 <i>Add me To Your ɢʀᴏᴜᴘ or ᴄʜᴀɴɴᴇʟ And Make admin To See the Magic.</i>''')
     HELP_TXT = """𝙷𝙴𝚈 {}
