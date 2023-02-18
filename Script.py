@@ -14,7 +14,14 @@ class script(object):
     HOME_BUTTONURL_UPDATES = environ.get("HOME_BUTTONURL_UPDATES", 'https://shorturllink.in/ref/Killer')
     START_TXT = environ.get("START_TXT", '''<b>Hello {} 👋🏻 Im Search Bot I can share Movies and Series 😁.
     
-   Just send movie name </b>
+   For Movies Type Movie Name Year
+Ex : Saaho 2022
+        Saaho Tel
+
+For Series Just Type Series Name With Season Number 
+Ex : Family Man S01
+       Mirzapur S02
+       Money Heist S03 </b>
 
 <i>Add me To Your ɢʀᴏᴜᴘ or ᴄʜᴀɴɴᴇʟ And Make admin To See the Magic.</i>''')
     HELP_TXT = """𝙷𝙴𝚈 {}
