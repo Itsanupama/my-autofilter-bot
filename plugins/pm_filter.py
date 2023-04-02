@@ -711,8 +711,8 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Rᴇǫᴜᴇsᴛᴇᴅ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ : <code>{search}</code> (Please Check your Spelling On Google)\n\nUse Correct 𝗦𝗲𝗮𝗿𝗰𝗵𝗶𝗻𝗴 Format :\n\nFor 𝗠𝗼𝘃𝗶𝗲👇\nSaaho 2019\n\nFor 𝗦𝗲𝗿𝗶𝗲𝘀\nMirzapur S01\n\n𝗗𝗼𝗻'𝘁 𝗨𝘀𝗲 𝗢𝘁𝗵𝗲𝗿 𝗪𝗼𝗿𝗱𝘀 𝗟𝗶𝗸𝗲 ❌ 👇 \nMovie, Series, Hindi Movie, South Movie, Dubbed, Please Send, Full HD Movie, All Seasons, Full series, etc.....! /n/nAny help? Contact me @Anonymous_owner_bot
-        if imdb and imdb.get('poster'):
+        cap = f"Rᴇǫᴜᴇsᴛᴇᴅ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ : <code>{search}</code>\n\n\n😌 ɪꜰ ᴛʜᴇ ᴍᴏᴠɪᴇ ʏᴏᴜ ᴀʀᴇ ʟᴏᴏᴋɪɴɢ ꜰᴏʀ ɪs ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ ᴛʜᴇɴ ʟᴇᴀᴠᴇ ᴀ ᴍᴇssᴀɢᴇ ʙᴇʟᴏᴡ 😌 \n\nᴇxᴀᴍᴘʟᴇ : \n\nᴇɴᴛᴇʀ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ (ʏᴇᴀʀ) ᴛᴀɢ @admin"
+    if imdb and imdb.get('poster'):
         try:
             hehe =  await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
                                       reply_markup=InlineKeyboardMarkup(btn))
