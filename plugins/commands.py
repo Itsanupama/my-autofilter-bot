@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('⚡ UᎮDΛTΞS ⚡', url='http://t.me/Anu_updates_bot')
+                InlineKeyboardButton('⚡ ʙᴏᴛ ᴜᴘᴅᴀᴛᴇs ⚡', url='http://t.me/Anu_updates_bot')
             ],
             [
-                InlineKeyboardButton('✨𝗕𝗔𝗖𝗞𝗨𝗣 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ✨', url=f"https://t.me/+xnS39gpvXdwwNmQx"),
+                InlineKeyboardButton('✨ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ✨', url=f"https://t.me/+xnS39gpvXdwwNmQx"),
             ],
             [
                 InlineKeyboardButton(text=DOWNLOAD_TEXT_NAME,url=DOWNLOAD_TEXT_URL)
@@ -45,13 +45,13 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('+ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ +', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('✨𝗕𝗔𝗖𝗞𝗨𝗣 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ✨', url='https://t.me/+xnS39gpvXdwwNmQx'),
-            InlineKeyboardButton('🤖 UᎮDΛTΞS 🤖', url='http://t.me/Anu_updates_bot')
+            InlineKeyboardButton('✨ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ ✨', url='https://t.me/+xnS39gpvXdwwNmQx'),
+            InlineKeyboardButton('🤖 ʙᴏᴛ ᴜᴘᴅᴀᴛᴇs 🤖', url='http://t.me/Anu_updates_bot')
             ],[
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+            InlineKeyboardButton('♻️ ʜᴇʟᴘ ♻️', callback_data='help'),
+            InlineKeyboardButton('♻️ᴀʙᴏᴜᴛ ♻️', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
